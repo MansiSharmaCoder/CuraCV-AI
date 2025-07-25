@@ -7,21 +7,24 @@ royal educational institute.
 
 """
 #####paragraph ---> sentence###########
-#from nltk.tokenize import sent_tokenize
+from nltk.tokenize import sent_tokenize
+a=sent_tokenize(corpus)
+print(a)
 
-#a=sent_tokenize(corpus)
-#print(a)
+
 
 ###########paragraph -----> words ######
-#from nltk.tokenize import word_tokenize
-#b=word_tokenize(corpus)
-#print(b)
+from nltk.tokenize import word_tokenize
+b=word_tokenize(corpus)
+print(b)
 
-#from nltk.tokenize import wordpunct_tokenize
-#c=wordpunct_tokenize(corpus)
-#print(c)
+
+from nltk.tokenize import wordpunct_tokenize
+c=wordpunct_tokenize(corpus)
+print(c)
+
+
 from nltk.tokenize import TreebankWordTokenizer
-#tokenizer=TreebankWordTokenizer()
-#d=tokenizer.tokenize(corpus)
-d=TreebankWordTokenizer.tokenize(corpus)
+tokenizer=TreebankWordTokenizer()
+d=tokenizer.tokenize(corpus)
 print(d)
